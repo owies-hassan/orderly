@@ -31,7 +31,7 @@ app.get('*',(req,res)=>{
     mongoose.connect(process.env.URL_DATA_BASE,{
 
     }).then(()=>{
-        app.listen(process.env.PORT,()=>{
+        app.listen(process.env.PORT||8000,()=>{
           console.log(`http://localhost:${process.env.PORT}`)
         })
     }).catch((err)=>{
