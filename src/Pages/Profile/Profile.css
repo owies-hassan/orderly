@@ -1,0 +1,50 @@
+.section-profile {
+  position: relative;
+}
+.section-profile .header .bg-img img {
+  width: 100%;
+  height: 400px;
+}
+.section-profile .header .personal-img {
+  position: absolute;
+  top: 304px;
+  left: 83px;
+}
+.section-profile .header .personal-img img {
+  border-radius: 50%;
+  width: 75%;
+  border: 5px solid white;
+}
+.section-profile .info-user {
+  display: flex;
+  position: relative;
+  /* text-align: center; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+@media (max-width: 575px) {
+  .section-profile .info-user {
+    padding-top: 120px;
+  }
+}
+.section-profile .info-user p {
+  color: #242424;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 600;
+  /* padding: 12px; */
+  margin: 20px;
+  padding: 0;
+}
+.section-profile .css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  justify-content: center;
+}
+.section-profile .main-profile {
+  display: flex;
+  position: relative;
+}
+
+/*# sourceMappingURL=Profile.css.map */

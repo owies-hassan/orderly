@@ -1,0 +1,42 @@
+.update-data-user {
+  position: absolute;
+  width: 75%;
+  top: 0;
+  left: 11%;
+  background-color: white;
+  padding: 40px 20px;
+  border: 2px solid rgba(173, 34, 31, 0.631372549);
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .update-data-user {
+    left: 6%;
+  }
+}
+.update-data-user .close {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: -7px;
+  right: 21px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .update-data-user .close {
+    top: 7px;
+    font-size: 30px;
+  }
+}
+.update-data-user form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 20px;
+  gap: 10px;
+  align-items: center;
+}
+.update-data-user form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 80%;
+}
+
+/*# sourceMappingURL=UpdateDataUser.css.map */

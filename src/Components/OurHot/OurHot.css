@@ -1,0 +1,105 @@
+.section-outHot {
+  padding: 70px 0 40px 0;
+  margin: 40px 0;
+}
+.section-outHot .content-outHot {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+@media (max-width: 912px) {
+  .section-outHot .content-outHot {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section-outHot .content-outHot .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+  position: absolute;
+  top: -45px;
+  left: 41px;
+  z-index: 2;
+}
+@media (max-width: 912px) {
+  .section-outHot .content-outHot .title {
+    font-size: 30px;
+    top: 0;
+  }
+}
+.section-outHot .content-outHot .title span {
+  font-size: 65px;
+  font-weight: 100;
+}
+@media (max-width: 912px) {
+  .section-outHot .content-outHot .title span {
+    font-size: 30px;
+  }
+}
+.section-outHot .content-outHot .part-price {
+  background: rgb(248, 185, 46);
+  padding: 20px;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  top: 104px;
+  left: 52px;
+  text-align: center;
+  position: absolute;
+  z-index: 3;
+}
+@media (max-width: 575px) {
+  .section-outHot .content-outHot .part-price {
+    padding: 4px;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    top: 82px;
+    left: 52px;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+  }
+}
+.section-outHot .content-outHot .price {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .section-outHot .content-outHot .price {
+    font-size: 20px;
+  }
+}
+.section-outHot .content-outHot .only {
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .section-outHot .content-outHot .only {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+}
+.section-outHot .content-outHot .part-1, .section-outHot .content-outHot .part-2 {
+  position: relative;
+}
+.section-outHot .content-outHot .part-1 img, .section-outHot .content-outHot .part-2 img {
+  width: 100%;
+}
+.section-outHot .content-outHot .bg-title {
+  background: rgba(243, 243, 243, 0.5215686275);
+  padding: 10px;
+  color: black;
+}
+
+/*# sourceMappingURL=OurHot.css.map */

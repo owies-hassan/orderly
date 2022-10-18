@@ -1,41 +1,85 @@
-.content-products-map {
+.products {
+  padding-top: 60px;
+}
+.products .content-products-map {
   transition-duration: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
+  width: 18%;
+  transition: 0.3s ease-in-out;
+  padding: 20px;
+  margin: 10px;
 }
-.content-products-map img {
-  width: 100%;
-  height: 100%;
+@media (max-width: 575.98px) {
+  .products .content-products-map {
+    margin: 0 0 20px 0;
+    padding: 10px 0 0 0;
+    width: 100%;
+  }
 }
-.content-products-map .name-product {
-  font-size: 50px;
+@media (min-width: 575.98px) and (max-width: 912px) {
+  .products .content-products-map {
+    width: 24%;
+  }
 }
-.content-products-map .des-product {
+.products .content-products-map img {
+  width: 150px;
+  height: 150px;
+}
+.products .content-products-map .info {
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.products .content-products-map .info .name-product {
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.products .content-products-map .info .des-product {
+  font-size: 15px;
   max-width: 211px;
   text-align: center;
+  margin-bottom: 0;
 }
-.content-products-map .price-product {
-  font-size: 30px;
+.products .content-products-map .info .price-product {
   color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
 }
-.content-products-map .order-now {
-  background: red;
-  color: white;
-  border: none;
-  padding: 10px;
+.products .content-products-map .info .order {
+  transition: 0.3s ease-in-out;
   opacity: 0;
-  transform: translate(0px, -13px);
-  transition-duration: 0.5s;
+  transform: translateY(0);
 }
-.content-products-map:hover {
-  padding-bottom: 20px;
+.products .content-products-map .info .order:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
 }
-.content-products-map:hover .order-now {
-  transform: translate(0px, 0px);
+.products .content-products-map .info .edit_remove {
+  margin: 20px 0;
+}
+.products .content-products-map .info .update-product .update-data-user {
+  top: -50px;
+  left: -40px;
+  width: 242px;
+}
+.products .content-products-map:hover {
+  height: 400px;
+}
+.products .content-products-map:hover .order {
   opacity: 1;
+  transform: translateY(10px);
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=ProductsMap.css.map */

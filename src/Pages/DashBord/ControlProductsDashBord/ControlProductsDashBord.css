@@ -1,0 +1,28 @@
+.control-products {
+  margin-top: 20px;
+  width: 80%;
+}
+@media (max-width: 912px) {
+  .control-products {
+    width: 100%;
+  }
+}
+.control-products .products {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.control-products .products .update-data-user {
+  width: 75%;
+  left: 106px;
+}
+@media (max-width: 912px) {
+  .control-products .products .update-data-user {
+    left: 40px;
+  }
+}
+.control-products .products .content-products-map {
+  border: 1px solid rgba(108, 117, 125, 0.25);
+}
+
+/*# sourceMappingURL=ControlProductsDashBord.css.map */

@@ -1,0 +1,13 @@
+.add-products {
+  width: 100%;
+}
+.add-products form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=FormAddProducts.css.map */

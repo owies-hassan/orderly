@@ -1,0 +1,116 @@
+
+
+
+
+
+
+.section-header{
+
+  .content-header{
+    display: flex;
+    padding:10px 40px;
+    align-items: center;
+    @media (max-width:912px) {
+      flex-direction: column;
+    }
+    .heightImg{
+      width: 40px;
+      @media (max-width:912px) {
+       display: none;
+      }
+    }
+    .pages{
+
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      ul{
+
+
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        gap: 20px;
+        @media (max-width:912px) {
+          gap: 10px;
+          color: white !important;
+        }
+        a,li{
+          text-decoration: none;
+          font-size: 25px;
+
+          list-style: none;
+          @media  (max-width:767px) {
+            padding: 5px;
+            /* background: red; */
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: white;
+          }
+
+        }
+.parent_pgDashBordMobile{
+  position: relative;
+
+ svg{
+   position: absolute;
+   top: 2px;
+   left: -32px;
+   font-size: 38px;
+ }
+}
+        @media (max-width:912px) {
+            flex-direction: column;
+          padding-left: 0;
+        }
+      }
+      .img-profile{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+
+
+
+  }
+  .footer-header{
+    display: flex;
+
+    font-size: 100px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 78%;
+    justify-content: space-around;
+    .register-login-btn,.logout{
+      display: flex;
+      gap: 20px;
+      button{
+        padding: 12px;
+        width: 187px;
+        font-size: 20px;
+      }
+    }
+
+  }
+  height: auto;
+}
+
+.position-fixed{
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  position: fixed;
+  box-shadow: 0px 12px 16px 0px #15161547;
+
+
+
+
+}
+
+.static{
+  background-color: #a40301;
+}

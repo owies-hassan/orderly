@@ -1,0 +1,20 @@
+.position-absolute {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.position-absolute ul {
+  list-style: none;
+  background: #efefef;
+  padding: 10px;
+}
+.position-absolute ul li {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=TableSelectControlUser.css.map */

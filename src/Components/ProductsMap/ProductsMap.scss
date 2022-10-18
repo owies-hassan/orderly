@@ -1,43 +1,90 @@
-.content-products-map{
+
+.products{
+  padding-top: 60px;
+  .content-products-map{
     transition-duration: .5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-
-  img{
-    width: 100%;
-    height: 100%;
-  }
-  .name-product{
-    font-size: 50px;
-  }
-
-  .des-product{
-    font-size: 20px;
-    max-width: 211px;
-    text-align: center;
-  }
-  .price-product{
-    font-size: 30px;
-    color: red;
-  }
-  .order-now{
-    background: red;
-    color: white;
-    border: none;
-    padding: 10px;
-opacity: 0;
-    transform: translate(0px, -13px);
-
-    transition-duration: .5s;
-  }
-
-  &:hover{
-    padding-bottom: 20px;
-    .order-now{
-      transform: translate(0px, 0px);
-      opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 18%;
+transition: .3s ease-in-out;
+    padding: 20px;
+    margin: 10px;
+    @media (max-width: 575.98px) {
+      margin: 0 0 20px 0;
+      padding: 10px 0 0 0;
+      width: 100%;
     }
+    @media (min-width: 575.98px)and (max-width: 912px) {
+      width: 24%;
+    }
+    img{
+
+      width: 150px;
+      height: 150px;
+
+    }
+    .info{
+      text-align: center;
+      .name-product{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+      .des-product{
+        font-size: 15px;
+        max-width: 211px;
+        text-align: center;
+        margin-bottom: 0;
+
+      }
+      .price-product{
+
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0;
+
+      }
+      transition: .3s ease-in-out;
+      .order{
+        transition: .3s ease-in-out;
+         opacity: 0;
+        transform:translateY(0)  ;
+        &:hover{
+
+          background-color: white;
+          color: red;
+          border:1px solid red
+        }
+      }
+      .edit_remove{
+        margin: 20px 0;
+      }
+.update-product{
+
+  .update-data-user{
+   top: -50px;
+    left: -40px;
+    width: 242px;
   }
+}
+
+    }
+
+   &:hover {
+     height: 400px;
+     .order{
+       opacity: 1;
+       transform: translateY(10px);
+       margin-top: 20px;
+     }
+   }
+  }
+}
+form{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }

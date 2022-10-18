@@ -1,0 +1,208 @@
+.section-about .out-fast-food {
+  display: flex;
+  padding: 50px 0 120px;
+  justify-content: space-between;
+}
+@media (max-width: 912px) {
+  .section-about .out-fast-food {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+}
+.section-about .out-fast-food .part-1, .section-about .out-fast-food .part-2 {
+  width: 50%;
+}
+@media (max-width: 912px) {
+  .section-about .out-fast-food .part-1, .section-about .out-fast-food .part-2 {
+    width: 100%;
+  }
+}
+.section-about .out-fast-food .part-1 .img-1, .section-about .out-fast-food .part-2 .img-1 {
+  position: absolute;
+  top: 148px;
+  right: 135px;
+}
+@media (max-width: 912px) {
+  .section-about .out-fast-food .part-1 .img-1, .section-about .out-fast-food .part-2 .img-1 {
+    position: static;
+  }
+}
+.section-about .out-fast-food .part-1 .img-2, .section-about .out-fast-food .part-2 .img-2 {
+  position: absolute;
+  top: 266px;
+  right: 255px;
+}
+@media (max-width: 912px) {
+  .section-about .out-fast-food .part-1 .img-2, .section-about .out-fast-food .part-2 .img-2 {
+    position: static;
+  }
+}
+.section-about .out-fast-food .title {
+  font-size: 38px;
+  color: #242424;
+  font-weight: 800;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.section-about .out-fast-food .para {
+  color: #797979;
+  font-size: 16px;
+  line-height: 1.9em;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.section-about .gallery {
+  background-color: #efefef;
+}
+.section-about .gallery .flex {
+  display: flex;
+  gap: 20px;
+  padding: 100px 20px;
+}
+@media (max-width: 912px) {
+  .section-about .gallery .flex {
+    flex-direction: column;
+  }
+}
+.section-about .gallery .flex .part-1 {
+  background: white;
+}
+.section-about .gallery .flex .part-1 img {
+  width: 100%;
+}
+.section-about .gallery .flex .part-1 .desc {
+  padding: 0 20px 10px;
+}
+.section-about .gallery .flex .part-1 .desc .title {
+  color: #242424;
+}
+.section-about .gallery .flex .part-1 .desc .para {
+  color: #797979;
+  font-size: 16px;
+  line-height: 1.8em;
+  margin-top: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.section-about .great-taste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+@media (max-width: 575px) {
+  .section-about .great-taste {
+    flex-direction: column;
+    padding: 20px;
+    background-position: center !important;
+  }
+}
+.section-about .great-taste .title {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1em;
+  display: inline-block;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+}
+@media (max-width: 575px) {
+  .section-about .great-taste .title {
+    font-size: 36px;
+  }
+}
+.section-about .great-taste .m-left {
+  margin-left: 119px;
+  margin-top: 13px;
+}
+@media (max-width: 575px) {
+  .section-about .great-taste .m-left {
+    font-size: 36px;
+  }
+}
+.section-about .great-taste .para {
+  margin-left: 140px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+.section-about .great-taste .svg {
+  font-size: 107px;
+}
+
+.request-loader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+.request-loader span {
+  position: relative;
+  font-size: 72px;
+  top: 5px;
+  left: -5px;
+}
+.request-loader::after {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid red;
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+}
+.request-loader::before {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid red;
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

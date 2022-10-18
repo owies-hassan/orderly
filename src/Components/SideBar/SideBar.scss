@@ -1,0 +1,43 @@
+
+
+
+.side_bar {
+  border-right: 1px solid #4c424294;
+  width: 20%;
+
+  img{
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding: 20px;
+      cursor: pointer;
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        gap: 10px;
+        span{
+          font-size: 20px;
+          color: #29335d;
+        }
+        svg{
+          color:#adb5bd;
+        }
+      }
+      &:hover{
+        background-color: #e9ecef;
+        svg{
+          color: green;
+        }
+      }
+    }
+  }
+}

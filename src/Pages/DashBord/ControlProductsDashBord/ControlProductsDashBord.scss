@@ -2,6 +2,10 @@
 
 .control-products{
   margin-top: 20px;
+  width: 80%;
+  @media (max-width: 912px) {
+    width: 100%;
+  }
 .products{
   display: flex;
   flex-wrap: wrap;
@@ -9,13 +13,13 @@
   .update-data-user{
     width: 75%;
     left: 106px;
+    @media (max-width:912px) {
+    left:40px
+    }
   }
   .content-products-map{
     border: 1px solid rgba(108,117,125,.25);
-    .img{
-      width: 100%;
 
-    }
   }
 }
 }

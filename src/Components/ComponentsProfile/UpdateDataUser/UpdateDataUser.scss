@@ -1,0 +1,41 @@
+
+
+.update-data-user{
+  position: absolute;
+  width: 75%;
+  top: 0;
+  left: 11%;
+  background-color: white;
+  padding: 40px 20px;
+  border: 2px solid #ad221fa1;
+  z-index: 10;
+  @media (max-width:767px) {
+    left: 6%
+  }
+  .close{
+    font-size: 50px;
+    font-weight: bold;
+
+    position: absolute;
+    top: -7px;
+    right: 21px;
+     cursor: pointer;
+    @media (max-width:767px) {
+      top: 7px;
+      font-size: 30px;
+    }
+  }
+ form{
+   display: flex;
+   justify-content: center;
+
+   flex-direction: column;
+   margin: 30px 20px ;
+   gap: 10px;
+
+   align-items: center;
+   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+     width: 80%;
+   }
+ }
+}

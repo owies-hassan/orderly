@@ -1,0 +1,112 @@
+.section-contact .header-contact {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  background-repeat: no-repeat !important;
+}
+.section-contact .content-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 575px) {
+  .section-contact .content-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.section-contact .content-contact .box-contact {
+  margin-top: -346px;
+}
+.section-contact .content-contact .box-contact .big-title {
+  color: #ffffff;
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 20px;
+  padding-bottom: 52px;
+}
+@media (max-width: 575px) {
+  .section-contact .content-contact .box-contact .big-title {
+    font-size: 30px;
+  }
+}
+.section-contact .content-contact .box-contact .form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: white;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.18);
+  padding: 80px 50px 75px;
+}
+.section-contact .content-contact .box-contact .form-contact .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section-contact .content-contact .box-contact .form-contact .flex .width-input {
+  width: 47%;
+}
+@media (max-width: 575px) {
+  .section-contact .content-contact .box-contact .form-contact .flex {
+    flex-direction: column;
+  }
+  .section-contact .content-contact .box-contact .form-contact .flex .width-input {
+    width: 100%;
+  }
+}
+.section-contact .content-contact .box-contact .form-contact input {
+  background-color: #f6f7fc;
+}
+.section-contact .content-contact .box-contact .form-contact .css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+  background-color: #f6f7fc;
+}
+.section-contact .content-contact .box-contact .form-contact .para {
+  color: #797979;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin: 15px 0;
+  font-family: "Open Sans", sans-serif;
+}
+.section-contact .content-contact .box-contact .form-contact .title {
+  color: #242424;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.section-contact .content-contact .box-contact .sideBar-contact .title-sidebar {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-contact .content-contact .box-contact .sideBar-contact .para-sidebar {
+  color: #797979;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.section-contact .content-contact .box-contact .sideBar-contact .big-title-sidebar {
+  color: #242424;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+.section-contact .content-contact .box-contact p {
+  font-size: 20px;
+}
+.section-contact .content-map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,27 @@
+.home-profile {
+  width: 100%;
+}
+.home-profile ul {
+  list-style: none;
+  padding: 0;
+}
+.home-profile ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ededed;
+  padding: 10px 60px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .home-profile ul li {
+    padding: 10px;
+  }
+}
+.home-profile ul li span {
+  color: #525252;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=MyAccount.css.map */

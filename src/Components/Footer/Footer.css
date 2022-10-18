@@ -1,0 +1,63 @@
+.section-footer {
+  position: relative;
+  z-index: -1;
+  margin-top: 50px;
+}
+.section-footer .overlay {
+  background-color: rgba(15, 25, 36, 0.85);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.section-footer .text-gray {
+  color: #a8a8a8;
+  font-size: 16px;
+}
+.section-footer .content-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0 20px 0;
+  z-index: 10;
+}
+.section-footer .content-footer .text-white {
+  font-size: 18px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: relative;
+}
+.section-footer .content-footer .text-white:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 2px;
+  left: 0;
+  background-color: red;
+}
+.section-footer .content-footer .text-white-2 {
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+@media (max-width: 575px) {
+  .section-footer .content-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.section-footer .copyRight {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*# sourceMappingURL=Footer.css.map */

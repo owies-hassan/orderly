@@ -1,0 +1,86 @@
+
+.section-db-home{
+  width: 100%;
+  background-color: #f8f9fa;
+  .content-homeDashBord{
+    background-color: #f8f9fa;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    @media (max-width:820px) {
+
+      flex-direction: column;
+    }
+    .info{
+      background: white;
+      padding: 20px;
+      width: 30%;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      p:first-child{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      .style-sales{
+        color: #084298;
+        svg{
+          color: #084298;
+          font-size: 50px;
+          background-color:  #0842982b;
+          border-radius: 50%;
+          padding: 12px;
+        }
+
+      }
+      .style-orders{
+
+        svg{
+          color:#0f5132a3;
+          font-size: 50px;
+          background-color:  #66907c85;
+          border-radius: 50%;
+          padding: 12px;
+        }
+      }
+      .style-products{
+
+        svg{
+          color:  #f5c11a;
+          font-size: 50px;
+          background-color:   #fff3cdc7;
+          border-radius: 50%;
+          padding: 12px;
+        }
+      }
+      @media (max-width:820px) {
+        width: auto;
+
+      }
+    }
+  }
+  .images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+    .img-1,.img-2{
+      h2{
+        margin-left: 20px;
+
+      }
+     width: 48%;
+      background-color: white;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

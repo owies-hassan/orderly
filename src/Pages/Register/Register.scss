@@ -1,0 +1,32 @@
+.section-register{
+  display: flex;
+  justify-content: center;
+  //position: absolute;
+  width: 100%;
+  top: 114px;
+  .router{
+    text-decoration: none;
+    font-size: 16px;
+    color: blue;
+  }
+}
+.content-register{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  width: 40%;
+  justify-items: center;
+  box-shadow: 16px 14px 33px -3px #000000b8;
+  border-radius: 11px;
+  @media (max-width: 575px){
+    width: 70%;
+  }
+  .style-input{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}

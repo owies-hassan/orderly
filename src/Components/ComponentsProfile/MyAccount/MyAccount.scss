@@ -1,0 +1,26 @@
+
+.home-profile {
+  width: 100%;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ededed;
+      padding: 10px 60px ;
+      margin-bottom: 10px;
+      //border-left: 10px solid #ad221f;
+      @media (max-width:767px) {
+        padding: 10px
+      }
+      span{
+        color: #525252;
+
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}

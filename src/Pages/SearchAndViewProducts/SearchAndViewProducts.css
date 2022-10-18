@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  margin: 20px 0;
+}
+
+.content-search {
+  display: flex;
+  flex-direction: column;
+}
+.content-search .content-products-map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.content-search .content-products-map .name-product {
+  font-size: 40px;
+  font-weight: bold;
+}
+.content-search .content-products-map .img {
+  width: 50%;
+}
+.content-search .content-products-map .img img {
+  width: 100%;
+}
+.content-search .content-products-map .info {
+  width: 50%;
+}
+.content-search .content-products-map .info .des-product {
+  font-size: 20px;
+}
+.content-search .content-products-map .info .price-product {
+  font-size: 30px;
+  color: red;
+}
+
+/*# sourceMappingURL=SearchAndViewProducts.css.map */

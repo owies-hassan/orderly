@@ -12,4 +12,17 @@
   width: 10%;
 }
 
+.alert-message {
+  position: fixed;
+  top: 190px;
+  right: 0;
+}
+
+.total {
+  font-size: 49px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
 /*# sourceMappingURL=Card.css.map */

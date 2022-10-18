@@ -1,15 +1,28 @@
 
 
-.products-bought{
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  .content-products-map{
+  .products-bought{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    img{
-      width: 10%;
+    flex-direction: column;
+    align-content: flex-start;
+    .content-products-map{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img{
+        width: 10%;
+      }
     }
+
   }
-}
+  .alert-message{
+    position: fixed;
+    top: 190px;
+    right: 0;
+  }
+  .total{
+    font-size: 49px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+  }
+

@@ -1,0 +1,14 @@
+.admin-profile-user {
+  width: 80%;
+}
+.admin-profile-user .side_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-profile-user .side_bar .side_bar img {
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=PageUserProfile.css.map */
