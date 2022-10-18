@@ -1,0 +1,23 @@
+.sign {
+  position: absolute;
+  top: 50%;
+  background: rgba(153, 153, 153, 0.4117647059);
+  width: 50%;
+  height: 200px;
+  z-index: 1;
+  left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign button {
+  background: red;
+  width: 150px;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Sign.css.map */

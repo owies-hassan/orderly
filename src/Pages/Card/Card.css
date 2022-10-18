@@ -1,0 +1,15 @@
+.products-bought {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.products-bought .content-products-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.products-bought .content-products-map img {
+  width: 10%;
+}
+
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,21 @@
+
+
+.control-products{
+  margin-top: 20px;
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .update-data-user{
+    width: 75%;
+    left: 106px;
+  }
+  .content-products-map{
+    border: 1px solid rgba(108,117,125,.25);
+    .img{
+      width: 100%;
+
+    }
+  }
+}
+}

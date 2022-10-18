@@ -1,0 +1,25 @@
+.content-home {
+  background-color: #f3f3f3;
+}
+.content-home .content-products ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.content-home .content-products ul li button {
+  background: red;
+  padding: 12px;
+  width: 187px;
+  color: white;
+  font-size: 20px;
+  border: navajowhite;
+  cursor: pointer;
+}
+.content-home .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 23px;
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,39 @@
+
+.form{
+  display:flex;
+  margin: 20px 0;
+}
+.content-search{
+  display: flex;
+  flex-direction: column;
+
+  .content-products-map{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+    .name-product{
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .img{
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+    .info{
+      width: 50%;
+      .des-product{
+        font-size: 20px;
+      }
+      .price-product{
+        font-size: 30px;
+        color: red;
+      }
+    }
+
+  }
+
+}

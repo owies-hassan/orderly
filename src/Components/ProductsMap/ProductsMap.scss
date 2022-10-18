@@ -1,0 +1,43 @@
+.content-products-map{
+    transition-duration: .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .name-product{
+    font-size: 50px;
+  }
+
+  .des-product{
+    font-size: 20px;
+    max-width: 211px;
+    text-align: center;
+  }
+  .price-product{
+    font-size: 30px;
+    color: red;
+  }
+  .order-now{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+opacity: 0;
+    transform: translate(0px, -13px);
+
+    transition-duration: .5s;
+  }
+
+  &:hover{
+    padding-bottom: 20px;
+    .order-now{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+}

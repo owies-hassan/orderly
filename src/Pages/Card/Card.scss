@@ -1,0 +1,15 @@
+
+
+.products-bought{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  .content-products-map{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+      width: 10%;
+    }
+  }
+}

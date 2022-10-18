@@ -1,0 +1,41 @@
+.content-products-map {
+  transition-duration: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+.content-products-map img {
+  width: 100%;
+  height: 100%;
+}
+.content-products-map .name-product {
+  font-size: 50px;
+}
+.content-products-map .des-product {
+  font-size: 20px;
+  max-width: 211px;
+  text-align: center;
+}
+.content-products-map .price-product {
+  font-size: 30px;
+  color: red;
+}
+.content-products-map .order-now {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  opacity: 0;
+  transform: translate(0px, -13px);
+  transition-duration: 0.5s;
+}
+.content-products-map:hover {
+  padding-bottom: 20px;
+}
+.content-products-map:hover .order-now {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=ProductsMap.css.map */
