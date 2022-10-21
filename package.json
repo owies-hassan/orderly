@@ -17,8 +17,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon  server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix frontend && npm run build --prefix frontend"
+    "start": "nodemon  server"
   },
   "author": "",
   "license": "ISC"

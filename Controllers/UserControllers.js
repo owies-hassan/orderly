@@ -128,6 +128,23 @@ const updateUser=async (req,res)=>{
 }
 
 
+//under testing
+const setControllerAdmin=async (req,res)=>{
+
+    const {id}=req.params;
+
+    try {
+        const user=await User.findByIdAndUpdate(id,{...req.body})
+        res.status(200).json(user)
+
+    }catch (err){
+        res.status(404).json({msg:err.message})
+    }
+}
 
 
-module.exports={postLogin,postRegister,getRegisters,searchUser,getUser,updateUser}
+
+
+
+
+module.exports={postLogin,postRegister,getRegisters,searchUser,getUser,updateUser,setControllerAdmin}
