@@ -1,6 +1,5 @@
 
-if (process.env.NODE_ENV !=='production')require('dotenv').config()
-
+require('dotenv').config()
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose')
@@ -23,17 +22,13 @@ app.use('/api/products', routerProducts)
 app.use('/api/users', routerUsers)
 app.use('/api/order', routerOrder)
 
-// app.use(express.static('../frontend/build'))
-app.get('*',(req,res)=>{
-    // res.sendFile((path.join(__dirname,'../frontend/build/index.html')))
-    res.send({msg:'work'})
-})
 
-
+// app.use(express.static('frontend/build'));
+// app.get('*', (req, res) => res.sendFile(`${__dirname}/frontend/build/index.html`));
     mongoose.connect(process.env.URL_DATA_BASE,{
 
     }).then(()=>{
-        app.listen(process.env.PORT||8000,()=>{
+        app.listen(process.env.PORT,"0.0.0.0",()=>{
           console.log(`http://localhost:${process.env.PORT}`)
         })
     }).catch((err)=>{
