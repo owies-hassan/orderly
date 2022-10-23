@@ -135,7 +135,7 @@ const updateProduct=async (req,res)=>{
     //
     // post.comments.push(value);
     //
-    // const updatedPost = await Products.findByIdAndUpdate(id, post, { new: true });
+    // const updatedPost = await Products.findByIdAndUpdate(id, post);
     //
     // res.json(updatedPost);
 

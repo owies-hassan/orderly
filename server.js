@@ -17,7 +17,7 @@ app.use(cors())
 app.use('/public',express.static('public'))
 app.use(express.json())
 
-// app.use('/send',routerContact)
+app.use('/send',routerContact)
 app.use('/api/products', routerProducts)
 app.use('/api/users', routerUsers)
 app.use('/api/order', routerOrder)

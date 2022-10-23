@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 
 router.post("/",  (req, res) => {
     try {
-        const { email, subject} = req.body
+        const { name,message,email, subject} = req.body
 
         let transpoter = nodemailer.createTransport({
             service:'gmail',
@@ -20,7 +20,8 @@ router.post("/",  (req, res) => {
             from: `${email}`,
             to: process.env.USER,
             subject: `${subject}`,
-
+             name:name,
+            message
 
         };
 

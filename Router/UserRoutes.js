@@ -4,12 +4,12 @@ const express=require('express');
 const router=express.Router();
 
 const {postRegister,postLogin,getRegisters, searchUser,getUser, updateUser,setControllerAdmin}=require('../Controllers/UserControllers')
-const {verifyToken} = require("../MiddleWare/Token");
-const uploadImgUser=require('../MiddleWare/uploadImgUser')
+const {checkAdmin} = require("../MiddleWare/Token");
+
 
 
 router.patch('/update/:id',updateUser)
-router.patch('/setAdmin/:id',setControllerAdmin)
+
 
 router.post('/register',postRegister);
 router.get('/register',getRegisters)
@@ -19,7 +19,8 @@ router.get('/search/:name',searchUser)
 
 router.get('/:email',getUser)
 
-
+router.use(checkAdmin)
+router.patch('/setAdmin/:id',setControllerAdmin)
 module.exports=router;
 
 
