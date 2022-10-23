@@ -10,7 +10,7 @@ const {checkAdmin} = require("../MiddleWare/Token");
 
 router.patch('/update/:id',updateUser)
 
-router.patch('/setAdmin/:id',checkAdmin,setControllerAdmin)
+router.patch('/setAdmin/:id',setControllerAdmin)
 
 router.post('/register',postRegister);
 router.get('/register',getRegisters)
