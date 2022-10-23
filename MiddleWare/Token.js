@@ -22,7 +22,6 @@ const verifyToken = async (req, res,next) => {
     req.user = await User.findOne({_id})
     req.isAdmin=await User.findOne({isAdmin})
 
-
     next()
   } catch (err) {
     res.status(401).json({msg:'error no token'})
@@ -30,10 +29,15 @@ const verifyToken = async (req, res,next) => {
 }
 
 const checkAdmin = (req, res, next) => {
-  if (!req.user.isAdmin) {
+
+
+  if (!req.isAdmin) {
+
+
      res.status(404).json({msg: `can't access here you are not admin`})
     return;
   }else {
+
     next()
   }
 }
