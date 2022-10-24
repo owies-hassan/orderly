@@ -8,19 +8,23 @@ const {checkAdmin, verifyToken} = require("../MiddleWare/Token");
 
 
 
-router.patch('/update/:id',updateUser)
+
 
 
 router.post('/register',postRegister);
-router.get('/register',getRegisters)
+
 router.post('/login',postLogin)
-router.get('/search/:name',searchUser)
 
 
-router.get('/:email',getUser)
+
+
 
 
 router.use(verifyToken)
+router.get('/register',getRegisters)
+router.get('/search/:name',searchUser)
+router.get('/:email',getUser)
+router.patch('/update/:id',updateUser)
 router.use(checkAdmin)
 
 router.patch('/setAdmin/:id',setControllerAdmin)

@@ -20,7 +20,8 @@ const verifyToken = async (req, res,next) => {
     const {_id,isAdmin} = jwt.verify(token, process.env.SECRET)
 
     req.user = await User.findOne({_id})
-    req.isAdmin=await User.findOne({isAdmin})
+    req.isAdmin=await User.findOne({isAdmin}).select('isAdmin')
+    console.log(`verify token ${req.user}`)
 
     next()
   } catch (err) {
@@ -31,13 +32,12 @@ const verifyToken = async (req, res,next) => {
 const checkAdmin = (req, res, next) => {
 
 
-  if (!req.isAdmin) {
-
-
+  if (!req.user.isAdmin) {
+    console.log(`checkAdmin f ${req.isAdmin}`)
      res.status(404).json({msg: `can't access here you are not admin`})
     return;
   }else {
-
+    console.log(`checkAdmin t ${req.isAdmin}`)
     next()
   }
 }
