@@ -16,10 +16,7 @@ const postRegister=async (req,res)=>{
         return;
 
     }
-    if (!validator.isStrongPassword(password)){
-        res.status(404).json({msg:'password must be strong',success:false})
-        return;
-    }
+
 
 
     const user=await User.findOne({email});
