@@ -23,7 +23,7 @@ const Register = () => {
     })
     const [gender, setGender] = React.useState('');
 
-    const {isError}=useSelector(state=>state.SliceUser)
+    const {isError,loading}=useSelector(state=>state.SliceUser)
 
     const handleChange = (e) => {
         setValue({...value, [e.target.name]: e.target.value})
@@ -90,7 +90,7 @@ const Register = () => {
                 <TextField type='email' label=' email' value={value.email} name='email' onChange={handleChange}/>
                 <TextField type='password' label=' password' value={value.password} name='password'
                            onChange={handleChange}/>
-                <Button type='submit' variant='contained' color='error' >submit</Button>
+                <Button type='submit' variant='contained' color='error' >{loading ? 'loading...' : 'Register'}</Button>
                 <NavLink className='router' to={'/login'}>Login</NavLink>
                 {isError&& <Alert severity="error">{isError}</Alert>}
 

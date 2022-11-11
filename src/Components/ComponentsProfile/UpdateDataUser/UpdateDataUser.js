@@ -25,7 +25,7 @@ const UpdateDataUser = ({item,setIsUpdate,isUpdate}) => {
             lastName:lastNameRef.current.value,
             country:countryRef.current.value,
             phone:phoneRef.current.value,
-            imgProfile:photoProfileRef.current.value,
+
         }
 
 

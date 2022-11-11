@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './HomeDashBord.css'
-import {Container} from "@mui/material";
+import {Alert, Container} from "@mui/material";
 
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
@@ -18,7 +18,7 @@ const HomeDashBord = () => {
     const dispatch = useDispatch();
     const {allOrders,loading:loadingOrder} = useSelector(state => state.SliceOrder)
     const {products,loading:loadingProducts} = useSelector(state => state.sliceProducts)
-    const {loading:loadingUser} = useSelector(state => state.SliceUser)
+    const {loading:loadingUser,isError,detailsError} = useSelector(state => state.SliceUser)
 
 
     let total = 0;
@@ -66,6 +66,9 @@ const HomeDashBord = () => {
                       <img src='/Image/product.png'/>
                   </div>
               </div>
+              {isError&& <Alert variant="filled" severity="error" className='style-alert'>
+                {detailsError}</Alert>}
+
               <TableUser/>
           </Container>}
       </div>

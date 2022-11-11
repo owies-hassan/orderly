@@ -1,8 +1,9 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "axios";
 
+    const url='https://owies-ecommerce-api.fly.dev/api/order'
 
-const url='http://localhost:8000/api/order'
+// const url='http://localhost:8000/api/order'
 const user=JSON.parse(localStorage.getItem('user'))
 export const postOrders = createAsyncThunk('postOrder/post', async (orderPro,thunkApi) => {
     const {rejectWithValue}=thunkApi

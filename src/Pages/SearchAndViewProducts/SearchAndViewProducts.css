@@ -12,6 +12,19 @@
   flex-direction: row;
   align-items: center;
   gap: 40px;
+  margin-top: 40px;
+}
+@media (max-width: 575px) {
+  .content-search .content-products-map {
+    flex-direction: column;
+    gap: 0;
+  }
+  .content-search .content-products-map:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .content-search .content-products-map:hover button {
+    margin-bottom: 20px !important;
+  }
 }
 .content-search .content-products-map .name-product {
   font-size: 40px;
@@ -25,6 +38,12 @@
 }
 .content-search .content-products-map .info {
   width: 50%;
+}
+@media (max-width: 575px) {
+  .content-search .content-products-map .info {
+    text-align: center;
+    width: 100%;
+  }
 }
 .content-search .content-products-map .info .des-product {
   font-size: 20px;

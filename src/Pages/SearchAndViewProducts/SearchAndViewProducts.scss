@@ -12,7 +12,17 @@
     flex-direction: row;
     align-items: center;
     gap: 40px;
-
+    margin-top: 40px;
+@media (max-width: 575px) {
+  flex-direction: column;
+  gap: 0;
+  &:hover{
+    box-shadow: rgb(0 0 0 / 22%) 0px 15px 12px;
+    button{
+margin-bottom: 20px!important;
+    }
+  }
+}
     .name-product{
       font-size: 40px;
       font-weight: bold;
@@ -25,6 +35,10 @@
     }
     .info{
       width: 50%;
+      @media (max-width: 575px) {
+      text-align: center;
+        width: 100%;
+      }
       .des-product{
         font-size: 20px;
       }

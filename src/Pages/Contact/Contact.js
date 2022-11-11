@@ -42,7 +42,7 @@ const dispatch=useDispatch()
                                 <TextField onChange={handleChange} name={'email'} value={contact.email} className='width-input' placeholder='email'  type='text'/>
                             </div>
                             <TextField onChange={handleChange} name={'subject'} value={contact.subject} placeholder='subject' fullWidth type='text'/>
-                            <TextField onChange={handleChange} name={'message'}  value={contact.message} placeholder='message' fullWidth multiline rows={10} type='text'/>
+                            <TextField sx={{background:'#f6f7fc'}} onChange={handleChange} name={'message'}  value={contact.message} placeholder='message' fullWidth multiline rows={10} type='text'/>
                             <Button type='submit'  style={{width:'120px'}}  color='error' variant='contained' >Submit</Button>
                         </form>
                     </div>

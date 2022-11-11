@@ -2,7 +2,11 @@ import {createSlice,createAsyncThunk} from "@reduxjs/toolkit";
 
 import axios from "axios";
 
-const url='http://localhost:8000/api/products';
+// const url='http://localhost:8000/api/products';
+// const url='https://node-app-grw0.onrender.com/api/products'
+const url='https://owies-ecommerce-api.fly.dev/api/products'
+
+
 const user=JSON.parse(localStorage.getItem('user'))
 
 export const getProducts=createAsyncThunk('getProducts/get',async (page,thunkApi)=>{
@@ -278,11 +282,13 @@ const sliceProducts=createSlice({
 
         },
         [addCommentsUser.fulfilled]:(state,action)=>{
-
+            console.log(true)
+               console.log(action.payload)
 
         },
         [addCommentsUser.rejected]:(state,action)=>{
-
+            console.log(false)
+            console.log(action.payload)
 
         },
     },

@@ -55,7 +55,6 @@ const SearchAndViewProducts = () => {
 
             </Container>
 
-            }
         </div>
     );
 };

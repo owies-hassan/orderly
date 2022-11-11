@@ -38,6 +38,11 @@
   margin: 20px;
   padding: 0;
 }
+@media (max-width: 575px) {
+  .section-profile .info-user p {
+    font-size: 20px;
+  }
+}
 .section-profile .css-heg063-MuiTabs-flexContainer {
   display: flex;
   justify-content: center;

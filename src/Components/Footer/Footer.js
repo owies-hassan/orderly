@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container} from "@mui/material";
 import './Footer.css'
+import {NavLink} from "react-router-dom";
 const Footer = () => {
     return (
         <div className='section-footer' style={{background:`url(../Image/4.png)`}}>
@@ -10,9 +11,9 @@ const Footer = () => {
                     <div className='part-1'>
                         <h2 className='text-white'>Contact Info</h2>
                         <div className='location'>
-                            <p className='text-white-2'>(1800) 574 9687</p>
-                            <p className='text-gray'>wengdo@contact.co.in</p>
-                            <p className='text-gray'>contact@wengdo.com</p>
+                            <p className='link'>(1800) 574 9687</p>
+                            <a  href='https://mailto:owies.h.hassan@gmail.com' target='_blank' className='text-gray margin '>owies.h.hassan@gmail.com</a>
+                            <a href='http://official-portfolio-owies.surge.sh' target='_blank' className='text-gray'>official-portfolio-owies.surge.sh</a>
                         </div>
                     </div>
                     <div className='part-2 '>
@@ -34,7 +35,7 @@ const Footer = () => {
                 </div>
 
                 <div className='copyRight'>
-                    <span className='text-gray'>© Copyright 2020 just Burgers WordPress Theme. All right reserved.</span>
+                    <span className='text-gray'>© Copyright 2020 owies hassan</span>
                 </div>
             </Container>
         </div>

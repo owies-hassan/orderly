@@ -17,12 +17,12 @@ const OrdersMap = ({item,checkPath}) => {
     return (
         <div className=' content-products-map'>
                 <div className='img'>
-                    <img src={`http://localhost:8000/public/${item.productImage}`}/>
+                    <img src={`https://node-app-grw0.onrender.com/public//${item.productImage}`}/>
                 </div>
                 <div className='info'>
                     <p className='name-product'>{item.name}</p>
                     <p className='des-product'>{item.ingredients}</p>
-                <p className='price-product'>{item.price}</p>
+                <p className='price-product'>{item.price} $</p>
                     {checkPath&&<Button onClick={handleDelete} variant='contained' color='error'>Delete</Button>}
             </div>
 

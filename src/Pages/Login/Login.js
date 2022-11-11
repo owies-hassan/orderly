@@ -14,7 +14,7 @@ const Login = () => {
     })
     const {user}=useTokenUser()
     const history=useNavigate()
-    const {isError}=useSelector(state=>state.SliceUser)
+    const {isError,loading}=useSelector(state=>state.SliceUser)
 
 
     const handleChange=(e)=>{
@@ -53,7 +53,7 @@ const Login = () => {
                 <TextField type='text' label=' name' value={value.name} name='name' onChange={handleChange}/>
                 <TextField type='email' label=' email' value={value.email} name='email' onChange={handleChange}/>
                 <TextField type='password' label=' password' value={value.password} name='password' onChange={handleChange}/>
-                <Button type='submit' variant='contained' color='error'>submit</Button>
+                <Button type='submit' variant='contained' color='error'>{loading?'loading...':'Login'}</Button>
                 <NavLink className='router' to={'/register'}>Register</NavLink>
                 {isError&& <Alert severity="error">{isError}</Alert>}
 

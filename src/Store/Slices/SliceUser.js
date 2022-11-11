@@ -2,7 +2,9 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "axios";
 
 
-const url='http://localhost:8000/api/users';
+// const url='http://localhost:8000/api/users';
+const url='https://owies-ecommerce-api.fly.dev/api/users'
+
 const user=JSON.parse(localStorage.getItem('user'))
 
 export const postRegisterUser=createAsyncThunk('postRegisterUser/post',async (dataUser,thunkApi)=>{
@@ -133,6 +135,29 @@ export const updateUser=createAsyncThunk('updateUser/patch',async ([id,updateDat
         }
     }
 })
+export const setControllerAdmin=createAsyncThunk('setControllerAdmin/patch',async ([id,updateData],thunkApi)=>{
+
+    const {rejectWithValue}=thunkApi
+    if (user){
+        try {
+            const {data}= await axios({
+                method: 'PATCH',
+                url:`${url}/setAdmin/${id}`,
+                data:updateData,
+                headers:{
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${user.token}`
+                }
+            });
+            return data
+        }catch (err){
+            return rejectWithValue(err)
+
+
+
+        }
+    }
+})
 
 export const postContact=createAsyncThunk('postContact/post',async (dataContact,thunkApi)=>{
 
@@ -156,8 +181,12 @@ export const postContact=createAsyncThunk('postContact/post',async (dataContact,
 
 const SliceUser = createSlice({
     name: 'sliceUser',
-    initialState: {stateUpdate:[],loading:false,isError:null,dataUser:[],successUser:null,stateGetAllUsers:[],StateSearchUser:[],stateUser:[]},
-    reducers: {},
+    initialState: {isAdmin:false,detailsError:'',stateUpdate:[],loading:false,isError:null,dataUser:[],successUser:null,stateGetAllUsers:[],StateSearchUser:[],stateUser:[]},
+    reducers: {
+        checkIsAdmin:(state,action)=>{
+            state.isAdmin=action.payload
+        }
+    },
     extraReducers: {
         [postRegisterUser.pending]: (state, action) => {
             state.loading=true;
@@ -272,7 +301,31 @@ const SliceUser = createSlice({
 
 
         },
+
+
+        [setControllerAdmin.pending]: (state, action) => {
+            state.loading=true
+        },
+        [setControllerAdmin.fulfilled]: (state, action) => {
+
+                console.log('full')
+            state.detailsError=null;
+
+        },
+        [setControllerAdmin.rejected]: (state, action) => {
+
+            console.log('reject')
+            state.loading=false
+            state.isError=true
+            state.detailsError=`you can't controller please  call admin owies to be admin`
+
+        },
+
+
+
+
     }
 })
 
 export default SliceUser.reducer;
+export const {checkIsAdmin}=SliceUser.actions

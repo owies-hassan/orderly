@@ -20,6 +20,14 @@ const ProductsMap = ({item}) => {
     const[isUpdate,setIsUpdate]=useState(false)
     const[comment,setComment]=useState('')
     const location=useLocation()
+    const styleProduct={
+
+        hover:{
+            scale:1.1,
+            boxShadow:  'rgba(0, 0, 0, 0.22) 0px 15px 12px'
+        },
+
+    }
     const handleChange=(e)=>{
         setComment(e.target.value)
     }
@@ -41,27 +49,18 @@ const ProductsMap = ({item}) => {
     //testing comment
     const handleComment= async (id)=>{
 
-        const data=  `oijohjohio`
-        await dispatch(addCommentsUser([id,'asdasd']))
 
-
-
-
+        await dispatch(addCommentsUser([id, {comments: comment}]))
     }
-const styleProduct={
 
-    hover:{
-        scale:1.1,
-        boxShadow:  'rgba(0, 0, 0, 0.22) 0px 15px 12px'
-    },
 
-}
+
     return (
         <Fragment>
 
             <motion.div className='content-products-map' variants={styleProduct}  whileHover='hover' >
                 <div className='img'>
-                    <img src={`http://localhost:8000/public/${item.productImage}`}/>
+                    <img src={`https://node-app-grw0.onrender.com/public/${item.productImage}`}/>
                 </div>
                 <div className='info' style={{position:'relative'}}>
                     <div className='update-product'>
@@ -69,7 +68,7 @@ const styleProduct={
                     </div>
                     <p className='name-product'>{item.name}</p>
                     <p className='des-product'>{item.ingredients}</p>
-                    <p className='price-product'>{item.price}</p>
+                    <p className='price-product'>{item.price}<span style={{marginLeft:'10px'}}>$</span></p>
                     {location.pathname!=='/DashBord/controlProducts'?
                         <Button className='order' onClick={handleOrder} variant='contained' color="error" >order now</Button>:
                         <div className='edit_remove'>
@@ -81,13 +80,13 @@ const styleProduct={
             </motion.div>
 
 
-            {location.pathname==='/Products'&&<div>
-                <form onSubmit={handleSubmit}>
-                    <TextField placeholder={item._id} fullWidth value={comment} label='your comment' onChange={handleChange} />
-                    <Button onClick={()=>handleComment(item._id)} type='submit' variant='contained'color='error'>Post</Button>
-                </form>
-                {item.comments?<p>{item.comments}</p>:''}
-            </div>}
+            {/*{location.pathname==='/Products'&&<div>*/}
+            {/*    <form onSubmit={handleSubmit}>*/}
+            {/*        <TextField name='comments' placeholder='your comment' fullWidth value={comment} label='your comment' onChange={handleChange} />*/}
+            {/*        <Button onClick={()=>handleComment(item._id)} type='submit' variant='contained'color='error'>Post</Button>*/}
+            {/*    </form>*/}
+            {/*    {item.comments?<p>{item.comments}</p>:''}*/}
+            {/*</div>}*/}
 
         </Fragment>
     );

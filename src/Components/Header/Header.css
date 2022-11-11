@@ -39,7 +39,7 @@
 }
 .section-header .content-header .pages ul a, .section-header .content-header .pages ul li {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   list-style: none;
 }
 @media (max-width: 767px) {

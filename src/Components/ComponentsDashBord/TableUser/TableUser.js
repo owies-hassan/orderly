@@ -11,6 +11,7 @@ import {useSelector} from "react-redux";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import useTokenUser from "../../../Hooks/UseTokenUser";
 import TableSelectControlUser from "../TableSelectControlUser/TableSelectControlUser";
+import {formatDistance} from "date-fns";
 
 
 const TableUser = () => {
@@ -29,19 +30,21 @@ const TableUser = () => {
                             <TableCell style={{fontSize:'20px'}}>Name</TableCell>
                             <TableCell style={{fontSize:'20px'}}align="right">Email</TableCell>
                             <TableCell style={{fontSize:'20px'}}align="right">Country</TableCell>
+                            <TableCell style={{fontSize:'20px'}}align="right">status</TableCell>
                             <TableCell style={{fontSize:'20px'}}align="right">Date</TableCell>
+
                             <TableCell style={{fontSize:'20px'}} align="right">Control</TableCell>
                         </TableRow>
                     </TableHead>
                     {user && (
-                        <TableBody >
+                        <TableBody  >
                             {stateGetAllUsers.map((row) => (
                                 <TableRow
                                     style={{position:"relative"}}
-                                    key={row.name}
+                                    key={row._id}
                                     sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                 >
-                                    <TableSelectControlUser row={row}/>
+                                    <TableSelectControlUser  row={row}/>
                                 </TableRow>
                             ))}
                         </TableBody>
