@@ -16,7 +16,7 @@ const {newProduct}=useSelector(state=>state.sliceProducts)
                 <FormAddProducts/>
                 {newProduct.name? <div className='content-products-map'>
                     <div className='img'>
-                        <img src={`https://node-app-grw0.onrender.com/public/${newProduct.productImage}`}/>
+                        <img src={`https://owies-ecommerce-api.fly.dev/public/${newProduct.productImage}`}/>
                     </div>
                     <div className='info'>
                         <p className='name-product'>{newProduct.name}</p>

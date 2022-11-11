@@ -60,7 +60,7 @@ const ProductsMap = ({item}) => {
 
             <motion.div className='content-products-map' variants={styleProduct}  whileHover='hover' >
                 <div className='img'>
-                    <img src={`https://node-app-grw0.onrender.com/public/${item.productImage}`}/>
+                    <img src={`https://owies-ecommerce-api.fly.dev/public/${item.productImage}`}/>
                 </div>
                 <div className='info' style={{position:'relative'}}>
                     <div className='update-product'>
